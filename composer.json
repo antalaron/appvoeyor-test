@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "symfony/validator": "^3.2.0",
+        "symfony/validator": "^2.7||^3.0",
         "symfony/polyfill-mbstring": "^1.2"
     },
     "require-dev": {
