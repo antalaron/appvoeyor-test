@@ -47,9 +47,14 @@ class UppercaseValidatorTest extends AbstractConstraintValidatorTest
             ['APP', true],
             ['ÁRON', true],
             ['ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP', true],
+
             ['app', false],
             ['áron', false],
             ['árvíztűrő tükörfúrógép', false],
+            ['árvíztŰrŐ tükörfúrógép', false],
+            ['árvíztŰrő tÜkörfÚrógép', false],
+            ['ÁRVÍZTűRő TÜKÖRFÚRÓGÉP', false],
+            ['ÁRVíZTűRő TÜKÖRFÚRÓGÉP', false],
         ];
     }
 }
