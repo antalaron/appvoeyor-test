@@ -24,11 +24,7 @@ class UppercaseValidator extends ConstraintValidator
      */
     public function validate($value, Constraint $constraint)
     {
-        if (null === $value || '' === $value) {
-            return;
-        }
-
-        if (mb_strtoupper($value) === $value) {
+        if (null === $value || '' === $value || mb_strtoupper($value) === $value) {
             return;
         }
 
